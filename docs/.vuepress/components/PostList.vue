@@ -2,6 +2,7 @@
 <template>
   <div class="category-list">
     <div v-for="post in posts" class="content-box">
+      <p>{{post.frontmatter['categories']}}</p>
       <div class="box-img">
         <a v-bind:href="post.path"><img v-bind:src="'/images/' + post.frontmatter.topimg" /></a>
       </div>
@@ -19,7 +20,8 @@ export default {
     posts() {
       return this.$site.pages
         //表示travel目录下的所有post
-        .filter(post => post.path.startsWith('/travel'))
+        //.filter(post => post.path.startsWith('/'))
+        .filter(post => post.frontmatter['categories'].startsWith('travel'))
         //日期按照降序排列
         .sort((a, b) => new Date(b.frontmatter.date) - new Date(a.frontmatter.date));
     }

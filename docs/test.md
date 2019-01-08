@@ -1,5 +1,6 @@
 ---
 title: ハローワールド
+categories: top
 ---
 おはようございます。
 
