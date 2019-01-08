@@ -13,6 +13,7 @@
   </div>
 </template>
 <script>
+import '../public/js/category.js';
 export default {
   computed: {
     posts() {
@@ -25,13 +26,4 @@ export default {
   }
 
 }
-$(function(){
-  var height_l = parseInt($('.box-img').width());
-  $('.box-img, .box-txt').height(height_l);
-
-  $(window).resize(function(){
-    var height_l = parseInt($('.box-img').width());
-    $('.box-img, .box-txt').height(height_l);
-  })
-})
 </script>

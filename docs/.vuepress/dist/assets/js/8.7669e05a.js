@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[8],{203:function(t,n,s){"use strict";s.r(n);var e=s(0),a=Object(e.a)({},function(){var t=this.$createElement,n=this._self._c||t;return n("div",{staticClass:"content"},[n("PostList")],1)},[],!1,null,null,"1f1a82d8");n.default=a.exports}}]);
