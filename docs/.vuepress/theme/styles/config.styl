@@ -1,0 +1,153 @@
+p
+  line-height: 1.5
+  margin: 0
+  padding: 0
+
+footer
+  font-size: 12px
+  text-align: center
+
+for row in 1 2 3 4 5
+  .mb{row}
+    margin-bottom: 10px * row
+  .pb{row}
+    padding-bottom: 10px * row
+
+.content-box
+  width: 66.66%
+  float: left
+  .box-img
+    width: 50%
+    float: left
+  .box-txt
+    position: relative
+    background: #CCC
+    width: 50%
+    padding: 0 20px
+    float: left
+    &::before
+      border-left: 22px solid transparent
+      border-right: 22px solid transparent
+      border-bottom: 22px solid #CCC
+      content: ''
+      display: block
+      height: 0
+      margin: auto
+      position: absolute
+      top: -22px; left: 0; right: 0;
+      width: 0
+.content-box:nth-child(3n+1)
+  .box-txt
+    &::before
+      border-top: 22px solid transparent
+      border-left: none
+      border-bottom: 22px solid transparent
+      border-right: 22px solid #CCC
+      left: -22px
+      top: 0
+      bottom: 0
+      right: initial
+
+.content-box:nth-child(3n-1)
+  width: 33.33%
+  float: right
+  .box-img
+    width: 100%
+  .box-txt
+    width: 100%
+    &::before
+      border-left: 22px solid transparent
+      border-top: none
+      border-right: 22px solid transparent
+      border-bottom: 22px solid #CCC
+      left: 0
+      top: -22px
+      bottom: initial
+      right: 0
+
+.content-box:nth-child(3n+3)
+  .box-img
+    float: right
+  .box-txt
+    float: left
+    &::before
+      border-bottom: 22px solid transparent
+      border-right: none
+      border-top: 22px solid transparent
+      border-left: 22px solid #CCC
+      left: initial 
+      top: 0
+      bottom: 0
+      right: -22px
+
+.category-list::after
+  clear: both
+  content: " "
+  display: block
+  
+
+.travel 
+  .content
+    max-width: 100%
+    padding: 0
+    *
+      box-sizing: border-box
+
+
+@media only screen and (min-width: 600px) and (max-width: 799px)
+  .content-box:nth-child(odd)
+    width: 100%
+    .box-img, .box-txt
+      width: 50%
+    .box-img
+      float: left
+    .box-txt
+      float: right
+      &::before
+        border-top: 22px solid transparent
+        border-left: none
+        border-bottom: 22px solid transparent
+        border-right: 22px solid #CCC
+        left: -22px
+        top: 0
+        bottom: 0
+        right: initial
+  .content-box:nth-child(even) 
+    width: 100%
+    .box-img, .box-txt
+      width: 50%
+    .box-img
+      float: right
+    .box-txt
+      float: left
+      &::before
+        border-top: 22px solid transparent
+        border-left: 22px solid #CCC
+        border-bottom: 22px solid transparent
+        border-right: none
+        left: initial 
+        top: 0
+        bottom: 0
+        right: -22px
+
+@media only screen and (max-width: 599px)
+  .content-box:nth-child(odd)
+    width: 100%
+    .box-img, .box-txt
+      width: 100%
+      float: none
+    .box-txt
+      &::before
+        border-left: 22px solid transparent
+        border-right: 22px solid transparent
+        border-top: none
+        border-bottom: 22px solid #CCC
+        left: 0
+        top: -22px
+        bottom: initial
+        right: 0
+  .content-box:nth-child(even)
+    width: 100%
+    .box-img, .box-txt
+      width: 100%
+      float: none
