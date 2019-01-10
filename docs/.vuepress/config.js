@@ -7,9 +7,6 @@ module.exports = {
     ['script', {src: '/js/jquery-3.1.1.min.js'}],
     ['script', {src: '/js/demo4.js'}]
   ],
-  plugins: [
-    require('./public/js/site.js')
-  ],
   themeConfig: {
     docsDir: 'docs',
     //repo: 'ImpressGroup/vuepress',
