@@ -4,6 +4,7 @@ module.exports = {
   host: "0.0.0.0",
   port: 3000,
   head:[
+    ['script', {src: '/js/jquery-3.1.1.min.js'}],
     ['script', {src: '/js/demo4.js'}]
   ],
   plugins: [
