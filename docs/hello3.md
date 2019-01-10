@@ -3,7 +3,7 @@ title: Hello,　滑雪4。
 date: 2019-01-02
 categories: travel
 description: 白马作为日本长野冬季奥运会的举办地，在全世界都有很高的知名度。
-topimg: skier_01.png
+topimg: ski-supply-second-model.jpg
 ---
 
 ![An image](./images/skier_01.png)

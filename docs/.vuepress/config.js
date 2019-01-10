@@ -1,11 +1,13 @@
 module.exports = {
-  title: '滑雪饭 Skier',
+  title: '滑雪饭 skier',
   description: '大人孩子同乐乐，奉上最热的滑雪信息、玩转各大滑雪胜地、实战装备全攻略！ 北海道、长野等日本滑雪之旅的人气路线一网打尽~顺便泡泡温泉也不错!',
   host: "0.0.0.0",
   port: 3000,
   head:[
-    ['script', {src: '/js/jquery-3.1.1.min.js'}],
     ['script', {src: '/js/demo4.js'}]
+  ],
+  plugins: [
+    require('./public/js/site.js')
   ],
   themeConfig: {
     docsDir: 'docs',

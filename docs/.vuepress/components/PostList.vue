@@ -1,8 +1,12 @@
 // PostList.vue
 <template>
+<div>
+  <div>
+    <img src="/images/ski-tourism.png" class="m-center mb20" />
+    <p class="text-center mb40">XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX</p>
+  </div>
   <div class="category-list">
     <div v-for="post in posts" class="content-box">
-      <p>{{post.frontmatter['categories']}}</p>
       <div class="box-img">
         <a v-bind:href="post.path"><img v-bind:src="'/images/' + post.frontmatter.topimg" /></a>
       </div>
@@ -12,6 +16,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 <script>
 import '../public/js/category.js';
